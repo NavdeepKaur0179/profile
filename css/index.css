@@ -1,0 +1,47 @@
+.top-header {
+  width: 100vw;
+  height: 66vh;
+  background-image: url("../images/top-header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.top-header .icons-div {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.top-header .icons-div .barcode-div {
+  cursor: pointer;
+}
+.top-header .icons-div .share-div {
+  cursor: pointer;
+}
+
+.material-icons .md-48 {
+  font-size: 18px;
+}
+.material-icons .md-light {
+  color: white;
+}
+.material-icons .md-light .md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.round-img-main-div {
+  padding-left: 45%;
+  padding-right: 45%;
+  display: flex;
+}
+.round-img-main-div .inner-div-round-img {
+  background-image: url("../images/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  border-radius: 50%;
+  margin-top: -50%;
+}
+
+/*# sourceMappingURL=index.css.map */
