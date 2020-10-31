@@ -1,13 +1,61 @@
+.bold-text {
+  color: white;
+  font-size: 18vw;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.justify-center {
+  text-align: center;
+}
+
+.green-text {
+  color: white;
+  font-size: 18vw;
+  color: green;
+}
+
+p,
+h1 {
+  color: grey;
+  background-color: black;
+  font-size: 3vw;
+}
+
+.red-button {
+  font-size: 3vw;
+  font-weight: bold;
+  border-radius: 4vw;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 1% 2%;
+}
+
+.profile-button-div {
+  padding: 2%;
+}
+
+span {
+  color: grey;
+  background-color: black;
+  font-size: 2vw;
+}
+
+.checked {
+  color: orange;
+}
+
 .top-header {
   width: 100vw;
-  height: 66vh;
+  height: 66vw;
   background-image: url("../images/top-header-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .top-header .icons-div {
-  padding: 3%;
+  padding: 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -17,31 +65,151 @@
 .top-header .icons-div .share-div {
   cursor: pointer;
 }
-
-.material-icons .md-48 {
-  font-size: 18px;
-}
-.material-icons .md-light {
+.top-header .white {
   color: white;
 }
-.material-icons .md-light .md-inactive {
-  color: rgba(255, 255, 255, 0.3);
+
+#outer-round-img-section-div {
+  background-color: black;
 }
 
 .round-img-main-div {
-  padding-left: 45%;
-  padding-right: 45%;
+  padding-left: 35%;
+  padding-right: 35%;
   display: flex;
 }
 .round-img-main-div .inner-div-round-img {
+  position: relative;
   background-image: url("../images/profile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  padding-top: 100%;
   width: 100%;
   border-radius: 50%;
   margin-top: -50%;
+}
+
+#insta-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.insta-div {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+
+.fa-size-sm {
+  font-size: 10vw;
+}
+
+.fa-size-sm-white {
+  font-size: 10vw;
+  color: white;
+}
+
+.fa-size-xs {
+  font-size: 8vw;
+}
+
+.fa-size-xxs {
+  font-size: 6vw;
+  color: white;
+}
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 5vw;
+  color: grey;
+  text-decoration: none;
+  font-size: 10vw;
+  width: 33.33%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+  border-bottom: 1vw solid transparent;
+}
+.navbar a:hover {
+  color: green;
+  border-bottom: 1vw solid green;
+}
+
+#revenue-img {
+  width: 100%;
+}
+
+.summary-div {
+  padding-top: 5%;
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+}
+.summary-div .item {
+  display: flex;
+  flex-direction: row;
+}
+.summary-div .item .icon-div {
+  align-self: center;
+}
+.summary-div .item .count-div {
+  margin-left: 4%;
+}
+.summary-div .item .count-div p {
+  margin: 0;
+}
+
+#final-summary-div {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#final-summary-div #cashout-div {
+  margin: auto 0 auto 0;
+  width: 30%;
+}
+#final-summary-div #cashout-div #cashout-btn {
+  font-size: 3vw;
+  font-weight: bold;
+  border-radius: 4vw;
+  cursor: pointer;
+  width: 100%;
+  background-color: black;
+  color: green;
+  border: 3px solid green !important;
+}
+#final-summary-div #cashout-div #cashout-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.bottom-nav {
+  width: 100%;
+  background-color: #363131;
+  overflow: auto;
+}
+.bottom-nav a {
+  float: left;
+  padding: 5vw;
+  color: #e2dede;
+  text-decoration: none;
+  font-size: 5vw;
+  width: 25%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+}
+.bottom-nav a:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

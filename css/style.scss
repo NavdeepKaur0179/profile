@@ -1,12 +1,71 @@
+$black-color:black;
+$grey-color:grey;
+$red-color:red;
+$color-green:green;
+@mixin simple-text {
+    color: white;
+    font-size: 18vw;
+}
+
+@mixin btn-common {
+    font-size: 3vw;
+    font-weight: bold;
+    border-radius: 4vw;
+    cursor: pointer;
+}
+
+.bold-text {
+    @include simple-text;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.green-text {
+    @include simple-text;
+    color: green;
+}
+
+p,
+h1 {
+    color: $grey-color;
+    background-color: black;
+    font-size: 3vw;
+}
+
+.red-button {
+    @include btn-common;
+    background-color: $red-color;
+    color: white;
+    padding: 1% 2%;
+}
+
+.profile-button-div {
+    padding: 2%;
+}
+
+span {
+    color: $grey-color;
+    background-color: black;
+    font-size: 2vw;
+}
+
+.checked {
+    color: orange;
+}
+
 .top-header {
     width: 100vw;
-    height: 66vh;
+    height: 66vw;
     background-image: url('../images/top-header-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     .icons-div {
-        padding: 3%;
+        padding: 5%;
         display: flex;
         justify-content: space-between;
         .barcode-div {
@@ -16,32 +75,167 @@
             cursor: pointer;
         }
     }
+    .white {
+        color: white;
+    }
 }
 
-.material-icons {
-    .md-48 {
-        font-size: 18px;
-    }
-    .md-light {
-        color: rgba(255, 255, 255, 1);
-        .md-inactive {
-            color: rgba(255, 255, 255, 0.3);
-        }
-    }
+// .material-icons {
+//     .md-48 {
+//         font-size: 18px;
+//     }
+//     .md-light {
+//         color: rgba(255, 255, 255, 1);
+//         .md-inactive {
+//             color: rgba(255, 255, 255, 0.3);
+//         }
+//     }
+// }
+#outer-round-img-section-div {
+    background-color: $black-color;
 }
 
 .round-img-main-div {
-    padding-left: 45%;
-    padding-right: 45%;
+    padding-left: 35%;
+    padding-right: 35%;
     display: flex;
     .inner-div-round-img {
+        position: relative;
         background-image: url('../images/profile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 40vh;
+        padding-top: 100%;
         width: 100%;
         border-radius: 50%;
         margin-top: -50%;
     }
+}
+
+#insta-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.insta-div {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+}
+
+.fa-size-sm {
+    font-size: 10vw;
+}
+
+.fa-size-sm-white {
+    font-size: 10vw;
+    color: white;
+}
+
+.fa-size-xs {
+    font-size: 8vw;
+}
+
+.fa-size-xxs {
+    font-size: 6vw;
+    color: white;
+}
+
+
+/* Style the navigation menu */
+
+.navbar {
+    width: 100%;
+    background-color: $black-color;
+    overflow: auto;
+    a {
+        float: left;
+        padding: 5vw;
+        color: $grey-color;
+        text-decoration: none;
+        font-size: 10vw;
+        width: 33.33%;
+        /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center;
+        /* If you want the text to be centered */
+        border-bottom: 1vw solid transparent;
+    }
+    a:hover {
+        color: $color-green;
+        border-bottom: 1vw solid $color-green;
+    }
+    // .active {
+    //     color: $color-green;
+    //     border-bottom: 1vw solid $color-green;
+    // }
+}
+
+#revenue-img {
+    width: 100%;
+}
+
+.summary-div {
+    padding-top: 5%;
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+    background-color: $black-color;
+    .item {
+        display: flex;
+        flex-direction: row;
+        .icon-div {
+            align-self: center;
+        }
+        .count-div {
+            margin-left: 4%;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+#final-summary-div {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    #cashout-div {
+        margin: auto 0 auto 0;
+        width: 30%;
+        #cashout-btn {
+            @include btn-common;
+            width: 100%;
+            background-color: $black-color;
+            color: $color-green;
+            border: 3px solid green !important;
+        }
+        #cashout-btn:hover {
+            background-color: $color-green;
+            color: white;
+        }
+    }
+}
+
+.bottom-nav {
+    width: 100%;
+    background-color: rgb(54, 49, 49);
+    overflow: auto;
+    a {
+        float: left;
+        padding: 5vw;
+        color: rgb(226, 222, 222);
+        text-decoration: none;
+        font-size: 5vw;
+        width: 25%;
+        /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center;
+        /* If you want the text to be centered */
+    }
+    a:hover {
+        color: $red-color;
+    }
+    // a.active {
+    //     color: $red-color;
+    // }
 }

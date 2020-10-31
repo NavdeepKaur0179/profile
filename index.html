@@ -9,27 +9,132 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--Link to FontsAwsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <title>Barber Profile</title>
 </head>
 
 <body>
     <div class="top-header">
         <div class="icons-div">
-
             <div class="barcode-div">
-                <i class="material-icons md-48 md-light">qr_code_scanner</i>
+                <!-- <i class="material-icons md-48 md-light">qr_code_scanner</i> -->
+                <i class="fas fa-qrcode fa-size-sm"></i>
             </div>
             <div class="share-div">
-                <i class="material-icons md-48 md-light">share</i>
+                <!-- <i class="material-icons md-48 md-light">share</i> -->
+                <i class="fas fa-share-alt fa-size-sm-white"></i>
             </div>
         </div>
     </div>
-    <div class="round-img-main-div">
-        <div class="inner-div-round-img">
+    <div id="outer-round-img-section-div">
+        <div class="round-img-main-div">
+            <div class="inner-div-round-img">
+                <div class="insta-div">
+                    <!-- <i class="fab fa-instagram fa-8x"></i> -->
 
+                    <img id="insta-img" src="images/insta.png" alt="instagram icon">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1 class="bold-text justify-center">Anthony Martial</h1>
+        <p class="simple-text justify-center">Barber with 9 years of Experience</p>
+        <div class="rating-div justify-center">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span>(17 Reviews)</span>
+        </div>
+        <div class="profile-button-div justify-center">
+            <button class="red-button" type="button">View Profile</button>
         </div>
     </div>
+
+    <!-- top nav bar -->
+    <div class="navbar">
+        <a class="active" href="#">
+            <div>
+                <i class="fas fa-hand-holding-usd fa-size-xs"></i>
+                <br>
+                <h1>Revenue</h1>
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <i class="fas fa-users fa-size-xs"></i>
+                <br>
+                <h1>Clients</h1>
+            </div>
+        </a>
+
+        <a href="#">
+            <div>
+                <i class="far fa-bell fa-size-xs"></i>
+                <br>
+                <h1>Notifications</h1>
+            </div>
+        </a>
+    </div>
+    <div class="tab-output-div">
+        <img id="revenue-img" src="images/revenue.jpg" alt="revenue-image">
+    </div>
+
+
+
+    <div class="summary-div">
+        <div class="item">
+            <div class="icon-div"><i class="fas fa-users fa-size-xxs"></i></div>
+            <div class="count-div">
+                <p class="simple-text">CLIENTS</p>
+                <p class="bold-text">245</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon-div"><i class="far fa-times-circle fa-size-xxs"></i></div>
+            <div class="count-div">
+                <p class="simple-text">CANCELLATIONS</p>
+                <p class="bold-text">11</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon-div"><i class="fas fa-hand-holding-usd fa-size-xxs"></i></div>
+            <div class="count-div">
+                <p class="simple-text">TOTAL TIPS</p>
+                <p class="bold-text">$400.00</p>
+            </div>
+        </div>
+    </div>
+    <div id="final-summary-div" class="summary-div">
+        <div class="item">
+            <div class="icon-div"><i class="fas fa-hand-holding-usd fa-size-xxs"></i></div>
+            <div class="count-div">
+                <p class="simple-text">TOTAL TIPS</p>
+                <p class="bold-text">$400.00</p>
+            </div>
+        </div>
+        <div id="cashout-div">
+            <button id="cashout-btn" type="button">Cashout</button>
+        </div>
+
+    </div>
+
+    <!-- bottom nav bar -->
+    <div class="bottom-nav">
+        <a class="active" href="#"><i class="fas fa-calendar-alt fa-size-xs"></i> Calendar</a>
+        <a href="#"><i class="fa fa-fw fa-home fa-size-xs"></i>  Home</a>
+        <a href="#"><i class="fab fa-gratipay fa-size-xs"></i> Reviews</a>
+        <a href="#"><i class="fas fa-cogs fa-size-xs"></i> Settings</a>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
