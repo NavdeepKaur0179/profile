@@ -221,9 +221,12 @@ span {
     width: 100%;
     background-color: rgb(54, 49, 49);
     overflow: auto;
+    .bottom_icon {
+        padding: 0;
+    }
     a {
         float: left;
-        padding: 5vw;
+        padding: 2vw;
         color: rgb(226, 222, 222);
         text-decoration: none;
         font-size: 5vw;

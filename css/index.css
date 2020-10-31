@@ -175,7 +175,7 @@ span {
 }
 #final-summary-div #cashout-div {
   margin: auto 0 auto 0;
-  width: 30%;
+  width: 20%;
 }
 #final-summary-div #cashout-div #cashout-btn {
   font-size: 3vw;
@@ -197,9 +197,12 @@ span {
   background-color: #363131;
   overflow: auto;
 }
+.bottom-nav .bottom_icon {
+  padding: 0;
+}
 .bottom-nav a {
   float: left;
-  padding: 5vw;
+  padding: 2vw;
   color: #e2dede;
   text-decoration: none;
   font-size: 5vw;
