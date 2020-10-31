@@ -211,5 +211,9 @@ span {
 .bottom-nav a:hover {
   color: red;
 }
+.bottom-nav p {
+  color: #e2dede;
+  background-color: #363131;
+}
 
 /*# sourceMappingURL=index.css.map */
